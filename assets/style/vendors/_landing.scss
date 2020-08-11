@@ -215,8 +215,6 @@ body {
 
 			.layout {
 
-				// height: 100%;
-
 				.menu {
 					max-width: 90px;
 					width: 90px;
@@ -600,14 +598,12 @@ body {
 											font-size: 17px;
 											font-weight: 700;
 											color: #19233B;
-
 											@media screen and (max-width:600px) {
 												font-size: 14px;
 											}
 										}
 									}
 								}
-
 							}
 						}
 
@@ -851,7 +847,6 @@ body {
 										color: #18223C;
 										margin-left: 30px;
 									}
-
 									.fa-angle-right {
 										margin-left: 10px !important;
 									}
