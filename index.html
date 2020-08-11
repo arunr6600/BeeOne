@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="./assets/style/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="landing-container">
+
+      <!-- header portion -->
+
+      <div class="header">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+               <img src="./assets/images/Techbank.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item ">
+                     <a class="nav-link" href="#">
+                        <span class="icon-search icon"></span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <span class="icon-envelope icon"></span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <span class="icon-notification icon"></span>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-box">
+                           <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column avatar-content">
+                           <span class="label-text">Welcome Back,</span>
+                           <span class="name">Satoshi Nakamoto </span>
+                        </div>
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Dashboard</a>
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+
+      <!-- main content section -->
+
+      <div class="content-container">
+         <div class="layout d-flex">
+            <div class="menu" onmouseover="mouseOver()" onmouseleave="mouseLeave()">
+               <ul id="nav-wrapper">
+                  <li class="nav-item active"><span class="icon-home icon"></span>
+                     <span class="text">Dashboard</span></li>
+                  <li class="nav-item"><span class="icon-wallet icon"></span>
+                     <span class="text">Wallets</span></li>
+                  <li class="nav-item "><span class="icon-cart icon"></span>
+                     <span class="text">Online</span></li>
+                  <li class="nav-item "><span class="icon-home-delivery icon"></span>
+                     <span class="text">Instore</span></li>
+                  <li class="nav-item "><span class="icon-card icon"></span>
+                     <span class="text">Payment</span></li>
+                  <li class="nav-item "><span class="icon-event icon"></span>
+                     <span class="text">Events</span></li>
+                  <li class="nav-item "><span class="icon-settings icon"></span>
+                     <span class="text">Settings</span></li>
+               </ul>
+            </div>
+
+            <div class="main" id="main">
+               <div class="btn-wrapper text-right">
+                  <button type="button" class="btn btn-primary">
+                     <img src="./assets/images/CCRB.png" alt="">
+                     <span class="btn-text">Get Free Crypto</span>
+                  </button>
+               </div>
+               <h3 class="main-title">Portfolio</h3>
+
+               <div class="card-section d-flex">
+                  <div class="card graph-card">
+                     <div class="card-body d-flex p-0 justify-content-between">
+                        <div class="line-graph-section">
+                           <div class="data-box">
+                              <div class="text-center title-portion position-relative">
+                                 <div class="dropdown btn-right">
+                                    <button class="btn btn-secondary  dropdown-toggle" type="button">
+                                       BTC
+                                    </button>
+                                 </div>
+                                 <span class="text">Your Portfolio Value</span>
+                              </div>
+                              <div class="d-flex align-items-center justify-content-center">
+                                 <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button">
+                                       Internal Value
+                                    </button>
+                                 </div>
+                              </div>
+                              <h3 class="value-text">2.80633 BTC</h3>
+                           </div>
+                           <div class="line-chart">
+                              <img src="./assets/images/line.png" alt="">
+                           </div>
+                        </div>
+                        <div class="pie-chart-section">
+                           <div class="image-box text-center">
+                              <img src="./assets/images/pie.png" alt="">
+                           </div>
+                           <h3 class="main-text">CCRB Mining</h3>
+                           <h3 class="main-text">Overall Completion</h3>
+
+                           <div class="d-flex value-wrapper justify-content-between">
+                              <div class="value-box">
+                                 <span class="title">Hashes Mined</span>
+                                 <span class="value">985K</span>
+                              </div>
+                              <div class="value-box">
+                                 <span class="title">Hashes Mined</span>
+                                 <span class="value">985K</span>
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-large">Start Mining</button>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <!-- payment card details -->
+
+                  <div class="card payment-card">
+                     <div class="card-body p-0">
+                        <div class="image-box">
+                           <img src="./assets/images/PrimePlus.png" alt="">
+                           <span class="image-label">4556 3479 5282 3038</span>
+                        </div>
+                        <div class="details-wrapper">
+                           <ul class="details">
+                              <li class="d-flex align-content-center">
+                                 <span class="label-text">Membership :</span>
+                                 <span class="data active">Prime Plus</span>
+                              </li>
+                              <li class="d-flex align-content-center">
+                                 <span class="label-text">Trading Account :</span>
+                                 <span class="data ">26654.70 CCRB</span>
+                              </li>
+                              <li class="d-flex align-content-center">
+                                 <span class="label-text">Mining Balance :</span>
+                                 <span class="data ">19688.68 CCRB</span>
+                              </li>
+                              <li class="d-flex align-content-center">
+                                 <span class="label-text">Mining Pending :</span>
+                                 <span class="data ">13800.22 CCRB</span>
+                              </li>
+                              <li class="d-flex align-content-center">
+                                 <span class="label-text">Total</span>
+                                 <span class="data ">60,143.6 CCRB</span>
+                              </li>
+                           </ul>
+                           <div class="text-center">
+                              <button type="button" class="btn btn-large">Upgrade</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!--  Details panel -->
+
+               <section class="details-panel d-flex">
+                  <!-- balance details -->
+                  <div class="balance-details-section">
+                     <h3 class="main-title">Balance Details</h3>
+                     <div class="card">
+                        <div class="card-body d-flex justify-content-between ">
+                           <div class="content-wrapper d-flex flex-column justify-content-between">
+                              <span class="title">Currency</span>
+                              <span class="data image">
+                                 <img src="./assets/images/mask.png" alt="">
+                                 CCRB
+                              </span>
+                           </div>
+                           <div class="content-wrapper d-flex flex-column justify-content-between">
+                              <span class="title">Balance</span>
+                              <span class="data"> 26654.70 CCRB</span>
+                           </div>
+                           <div class="content-wrapper d-flex flex-column justify-content-between">
+                              <span class="title">External BTC Value
+                                 <img src="./assets/images/question.svg" alt=""></span>
+                              <span class="data"> 0.46672 BTC</span>
+                           </div>
+                           <div class="content-wrapper d-flex flex-column justify-content-between">
+                              <span class="title">Internal Value
+                                 <img src="./assets/images/question.svg" alt="">
+                              </span>
+                              <span class="data">$12280.16</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- active log -->
+                  <div class="active-log">
+                     <h3 class="main-title">Activity Log</h3>
+
+                     <div class="card">
+                        <div class="card-body d-flex align-items-center">
+                           <span class="label">Affiliate Activitie Mining</span>
+                           <div class="progress-wrapper w-100 d-flex align-items-center">
+                              <div class="progress">
+                                 <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                 </div>
+                              </div>
+                              <span class="progress-value ">70%
+                                 <i class="fa fa-angle-right "></i></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+   </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+   </script>
+   <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
